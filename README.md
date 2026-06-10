@@ -1,4 +1,4 @@
-# Workflow Intelligence Platform
+# Workflow Intelligence Platform 
 
 An AI-powered workflow and operational intelligence platform designed to improve productivity, task prioritization, context retention, and decision support.
 
