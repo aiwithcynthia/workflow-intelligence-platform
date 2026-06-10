@@ -1,24 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Workflow Intelligence Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
 <div class="container">
 
-<h1>Workflow Intelligence Platform</h1>
+    <h1>Workflow Intelligence Platform</h1>
 
-<div class="card">
-<h2>AI Assistant</h2>
-<p>What would you like help with today?</p>
-</div>
+    <div class="card">
+        <h2>AI Assistant</h2>
+        <p>What would you like help with today?</p>
+    </div>
 
-<div class="card">
-<button>Prioritize My Tasks</button>
-<button>Create Action Plan</button>
-<button>Review Deadlines</button>
-<button>Brain Dump & Organize</button>
-<button>Ask AI Assistant</button>
-</div>
+    <div class="card">
+
+        <h2>Task Prioritizer</h2>
+
+        <textarea
+            id="taskInput"
+            rows="8"
+            style="width:100%;"
+            placeholder="Enter one task per line..."></textarea>
+
+        <button onclick="prioritizeTasks()">
+            Prioritize Tasks
+        </button>
+
+        <div id="results"></div>
+
+    </div>
 
 </div>
 
 <script src="app.js"></script>
 
 </body>
+
+</html>
