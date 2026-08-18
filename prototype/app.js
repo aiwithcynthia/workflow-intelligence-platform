@@ -9,22 +9,20 @@ function prioritizeTasks() {
         let score = 1;
         const lowerTask = task.toLowerCase();
 
-        if (lowerTask.includes("due") || lowerTask.includes("deadline") || lowerTask.includes("urgent")) {
-            score += 3;
-        }
+       if (["overdue", "urgent", "today", "tomorrow", "due", "deadline", "asap"]
+    .some(signal => lowerTask.includes(signal))) {
+    score += 3;
+}
 
-        if (lowerTask.includes("client") || lowerTask.includes("payroll") || lowerTask.includes("work")) {
-            score += 2;
-        }
+if (["compliance", "risk", "client", "payroll", "critical", "revenue"]
+    .some(signal => lowerTask.includes(signal))) {
+    score += 2;
+}
 
-        if (lowerTask.includes("school") || lowerTask.includes("assignment") || lowerTask.includes("walden")) {
-            score += 2;
-        }
-
-        if (lowerTask.includes("gym") || lowerTask.includes("clean")) {
-            score += 1;
-        }
-
+if (["review", "report", "follow-up", "follow up", "meeting"]
+    .some(signal => lowerTask.includes(signal))) {
+    score += 1;
+}
         return { task, score };
     });
 
