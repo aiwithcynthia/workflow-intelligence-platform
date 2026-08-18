@@ -33,7 +33,7 @@ function prioritizeTasks() {
     const results = document.getElementById("results");
 
     results.innerHTML =
-        "<h3>AI Priority Recommendation</h3><ol>" +
+        "<h3>Priority Recommendation</h3><ol>" +
         scoredTasks.map(item =>
             `<li>${item.task} <strong>Score: ${item.score}</strong></li>`
         ).join("") +
