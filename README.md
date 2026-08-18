@@ -1,6 +1,11 @@
 # Workflow Intelligence Platform 
 
 An AI-powered workflow and operational intelligence platform designed to improve productivity, task prioritization, context retention, and decision support.
+## Live Demo
+
+[Open the interactive Task Prioritizer](https://aiwithcynthia.github.io/workflow-intelligence-platform/prototype/)
+
+This browser-based prototype ranks tasks using urgency, deadline, and work-impact signals. It uses fictional user-entered examples and does not contain employer or client data.
 
 ## Vision
 
